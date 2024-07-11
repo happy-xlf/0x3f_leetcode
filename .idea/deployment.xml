@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="lifeng@101.42.149.139:10999 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/lifeng/LLM_work/pycharm_demo" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lifeng@101.42.149.139:10999 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/lifeng/LLM_work/0x3f_leetcode" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
