@@ -1,0 +1,2 @@
+{"__module__": "agentscope.message.msg", "__name__": "Msg", "content": "@Lingfeng 你是谁？", "name": "User", "role": "user", "metadata": null, "url": null, "timestamp": "2024-09-22 20:29:56", "id": "e442f19db93d4508b101fc5728891d6f"}
+{"__module__": "agentscope.message.msg", "__name__": "Msg", "content": "Lingfeng: @User 本官乃宫廷之中的凌风，以智谋与策略见长。在这错综复杂的权谋之中，本官正潜心调查皇后谋士之可疑行径。汝可有甚事相询？若无他事，不妨共商国是。汝意如何？", "name": "Lingfeng", "role": "assistant", "metadata": null, "url": null, "timestamp": "2024-09-22 20:30:01", "id": "ff7c1586a9ab4f42950a71c4b5a9183c"}

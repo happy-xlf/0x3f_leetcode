@@ -1,0 +1,9 @@
+{
+    "config_name": "my_dashcope_chat_config", 
+    "model_type": "dashscope_chat",
+    "model_name": "qwen2-72b-instruct",
+    "api_key": "sk-5e90cf905cec49ac8fd8c02c77d02da8",
+    "generate_kwargs": {
+        "temperature": 0.8
+    }            
+}

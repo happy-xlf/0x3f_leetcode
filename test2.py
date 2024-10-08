@@ -14,23 +14,23 @@
 
 nums = [1,3,4,7,2]
 
-def dc(nums):
-    tmp = [False]*len(nums)
-    tmp[0] = True
+# def dc(nums):
+#     tmp = [False]*len(nums)
+#     tmp[0] = True
 
-    for i in range(len(nums)):
-        if tmp[i] == True:
-            ed = i + nums[i]
-            ed = min(len(nums)-1, ed)
-            if ed == len(nums)-1:
-                return True
-            for j in range(i+1,ed+1):
-                tmp[j] = True
+#     for i in range(len(nums)):
+#         if tmp[i] == True:
+#             ed = i + nums[i]
+#             ed = min(len(nums)-1, ed)
+#             if ed == len(nums)-1:
+#                 return True
+#             for j in range(i+1,ed+1):
+#                 tmp[j] = True
         
 
-    return False
+#     return False
 
-print(dc(nums))
+# print(dc(nums))
 
 class Self_attention(nn.Moudle):
     def __init__(self,emb_dim, num_head):
@@ -54,7 +54,18 @@ class Self_attention(nn.Moudle):
 
         return atten
 
+text1 = "hello world"
+text2 = "how erld eollo"
 
+m,n = len(text1), len(text2)
+dp = [[0]*(n+1) for _ in range(m+1)]
+for i in range(1,m+1):
+    for j in range(1,n+1):
+        if text1[i-1] == text2[j-1]:
+            dp[i][j] = dp[i-1][j-1] + 1
+        else:
+            dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+print(dp[m][n])
 
 
 
