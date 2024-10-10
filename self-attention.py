@@ -7,6 +7,9 @@
 @Version :   1.0
 @Desc    :   None
 '''
+import torch.nn as nn
+import torch.functional as F
+import math
 
 # 给你一个非负整数数组 nums ，你最初位于数组的 第一个下标 。数组中的每个元素代表你在该位置可以跳跃的最大长度。
 
@@ -47,7 +50,7 @@ class Self_attention(nn.Moudle):
         k = self.q(x).view(batch_size, -1, self.num_head, self.head_dim).transpose(1,2)
         v = self.q(x).view(batch_size, -1, self.num_head, self.head_dim).transpose(1,2)
 
-        score = q.dot(k.transpose(-2,-1)) // sqrt(self.head_dim)
+        score = q.dot(k.transpose(-2,-1)) // math.sqrt(self.head_dim)
         score = F.softmax(score, dim=-1)
 
         atten = score.dot(v).view(batch_size, -1, self.emb_dim)
